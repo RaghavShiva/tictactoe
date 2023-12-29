@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+    font-size:5rem;
+    font-family:cursive;
+  }
+  body {
+    background-color: #F2A541;
+    text-align: center;
+  }
+  
+  .container {
+    height: 65vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 57vmin;
+    width: 57vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    background-color: #ffffc7;
+  }
+  
+  
+  #reset{
+    height:5rem;
+    border-radius: 1rem;
+  }
+  #reset-btn {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color:#F2A541;
+    border: none;
+  }
+  #new{
+    height:7rem;
+    
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color:#F2A541;
+    border: none;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 8vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  #msg{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 3s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
